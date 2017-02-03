@@ -1,0 +1,12 @@
+<div class="jumbotron">
+    <h1>{{title}}</h1>
+    <h2>Hello {{name}}</h2>
+    <ul>
+        <li *ngFor="let user of users" (click)="onSelect(user)">
+            <span class="label label-success">{{user.Id}}</span>
+            <span class="label label-info">{{user.Name}}</span>
+            <span class="label label-primary">{{user.Age}}</span>
+        </li>
+    </ul>
+    <user-details [user]="selectedUser"></user-details>
+</div>
