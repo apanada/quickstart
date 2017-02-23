@@ -4,13 +4,16 @@ import { Component } from '@angular/core';
   selector: 'my-app',
   template: `
     <h1>Hello {{name}}</h1>
-    <home></home>      
+    <home></home>
     <my-list></my-list>
     <my-key></my-key>
     <event-filtering></event-filtering><br/>
-    <onblur-event></onblur-event><br/>    
-    <contact-form></contact-form>
+    <onblur-event></onblur-event><br/>
+    <contact-form></contact-form><br/>
+    <user-list></user-list>
   `
 })
 
-export class AppComponent  { name = 'Angular JS'; }
+export class AppComponent {
+  name = 'Angular JS';
+}
